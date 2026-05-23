@@ -1,0 +1,15 @@
+[submodule "assetspaces/ems"]
+	path = assetspaces/ems
+	url = https://github.com/kitelev/exocortex-ems-ontology
+[submodule "assetspaces/ems-commands"]
+	path = assetspaces/ems-commands
+	url = https://github.com/kitelev/exocortex-ems-commands
+[submodule "assetspaces/test"]
+	path = assetspaces/test
+	url = https://github.com/kitelev/exocortex-test-ontology
+[submodule "assetspaces/exo"]
+	path = assetspaces/exo
+	url = https://github.com/kitelev/exocortex-exo-ontology
+[submodule "assetspaces/shared-identities"]
+	path = assetspaces/shared-identities
+	url = https://github.com/kitelev/exocortex-shared-identities

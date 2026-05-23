@@ -1,0 +1,12 @@
+{
+  "name": "@kitelev/exocortex-ems-commands-test",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Acceptance test fixtures for ems-commands ABox bindings (RFC aaaa2dea homoiconic plugin testing pilot bb00efed)",
+  "scripts": {
+    "test": "echo 'Phase 3 will populate scripts/run-test-cases.sh'"
+  },
+  "devDependencies": {
+    "@kitelev/exocortex-cli": "^16.19.0"
+  }
+}
