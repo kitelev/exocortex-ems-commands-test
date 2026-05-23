@@ -1,0 +1,50 @@
+name: ABox Test (Homoiconic plugin testing)
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+permissions:
+  contents: read
+
+jobs:
+  abox-test:
+    name: Run ABox diff-oracle test suite
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+
+    env:
+      EXOCORTEX_SKIP_HOOKS: '1'
+
+    steps:
+      - name: Checkout with submodules
+        uses: actions/checkout@v4
+        with:
+          submodules: recursive
+          fetch-depth: 1
+
+      - name: Set up Node 20
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+
+      - name: Install pinned CLI
+        run: |
+          npm install --no-audit --no-fund
+          npx @kitelev/exocortex-cli --version
+
+      - name: Validate SHACL schema across vault
+        run: |
+          npx @kitelev/exocortex-cli validate schema --shapes-mode \
+            --also assetspaces/ems \
+            --also assetspaces/ems-commands \
+            --also assetspaces/test \
+            --also assetspaces/exo \
+            --also assetspaces/shared-identities
+
+      - name: Run test-cases (diff oracle)
+        run: |
+          ./scripts/run-test-cases.sh
