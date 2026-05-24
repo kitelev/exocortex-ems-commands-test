@@ -46,7 +46,7 @@ jobs:
             --also assetspaces/w3c-aggregated \
             --also assetspaces/place \
             --also assetspaces/period \
-            --also assetspaces/inbox \
+            --also assetspaces/role \
 
       - name: Run test-cases (diff oracle)
         run: |
