@@ -46,6 +46,9 @@ jobs:
             --also assetspaces/place \
             --also assetspaces/period \
             --also assetspaces/role \
+            --also assetspaces/ims \
+            --also assetspaces/exocmd \
+            --also assetspaces/aiknow-ontology \
 
       - name: Run test-cases (diff oracle)
         run: |

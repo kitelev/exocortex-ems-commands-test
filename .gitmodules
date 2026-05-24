@@ -22,3 +22,12 @@
 [submodule "assetspaces/role"]
 	path = assetspaces/role
 	url = https://github.com/kitelev/exoas-role.git
+[submodule "assetspaces/ims"]
+	path = assetspaces/ims
+	url = https://github.com/kitelev/exoas-ims.git
+[submodule "assetspaces/exocmd"]
+	path = assetspaces/exocmd
+	url = https://github.com/kitelev/exoas-exocmd.git
+[submodule "assetspaces/aiknow-ontology"]
+	path = assetspaces/aiknow-ontology
+	url = https://github.com/kitelev/exoas-aiknow.git
