@@ -10,6 +10,15 @@
 [submodule "assetspaces/exo"]
 	path = assetspaces/exo
 	url = https://github.com/kitelev/exoas-exo
-[submodule "assetspaces/shared-identities"]
-	path = assetspaces/shared-identities
-	url = https://github.com/kitelev/exoas-shared-identities
+[submodule "assetspaces/w3c-aggregated"]
+	path = assetspaces/w3c-aggregated
+	url = https://github.com/kitelev/exoas-w3c-aggregated.git
+[submodule "assetspaces/place"]
+	path = assetspaces/place
+	url = https://github.com/kitelev/exoas-place.git
+[submodule "assetspaces/period"]
+	path = assetspaces/period
+	url = https://github.com/kitelev/exoas-period.git
+[submodule "assetspaces/inbox"]
+	path = assetspaces/inbox
+	url = https://github.com/kitelev/exoas-inbox.git

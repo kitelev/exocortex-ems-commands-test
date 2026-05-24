@@ -43,7 +43,10 @@ jobs:
             --also assetspaces/ems-commands \
             --also assetspaces/test \
             --also assetspaces/exo \
-            --also assetspaces/shared-identities
+            --also assetspaces/w3c-aggregated \
+            --also assetspaces/place \
+            --also assetspaces/period \
+            --also assetspaces/inbox \
 
       - name: Run test-cases (diff oracle)
         run: |
